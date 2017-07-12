@@ -6,6 +6,13 @@ import javax.persistence.Id;
 
 @Entity
 public class Reservation {
+	
+
+	@Override
+	public String toString() {
+		return "Reservation [reservationNumber=" + reservationNumber + ", travelName=" + travelName + ", destination="
+				+ destination + "]";
+	}
 
 	@Id
 	@GeneratedValue
